@@ -13,9 +13,8 @@ public class colorChanger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.UpArrow))
-        {
-            GetComponent<Renderer>().material.color = new Color(Random.Range(0,1f),Random.Range(0,1f),Random.Range(0,1f));
+        if (Input.GetKeyDown(KeyCode.UpArrow)){
+            GetComponent<Renderer>().material.color = new Color(Random.Range(0,1f),Random.Range(0,1f), Random.Range(0,1f));
         }
     }
 }
